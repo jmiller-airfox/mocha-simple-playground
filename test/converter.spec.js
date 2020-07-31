@@ -2,7 +2,10 @@ var expect    = require("chai").expect;
 var converter = require("../app/converter");
 
 describe("Color Code Converter", function() {
-  
+  before(function () {
+    throw new Error("asplode");
+  });
+
   describe("RGB to Hex conversion", function() {
     it("converts the basic colors", function() {
       var redHex   = converter.rgbToHex(255, 0, 0);
